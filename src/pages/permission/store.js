@@ -1,4 +1,4 @@
-export default () => {
+export default ({ filterRoutes }) => {
   const name = "permission";
 
   const { asyncRoutes, constantRoutes } = {};
@@ -22,7 +22,7 @@ export default () => {
         if (roles.includes("admin")) {
           accessedRoutes = asyncRoutes || [];
         } else {
-          accessedRoutes = filterAsyncRoutes(asyncRoutes, roles);
+          accessedRoutes = filterRoutes(asyncRoutes, roles);
         }
         commit("SET_ROUTES", accessedRoutes);
         resolve(accessedRoutes);

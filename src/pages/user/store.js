@@ -36,7 +36,7 @@ export default ({ token }) => {
           .then(response => {
             const { data } = response;
             commit("SET_TOKEN", data.token);
-            setToken(data.token);
+            token.set(data.token);
             resolve();
           })
           .catch(error => {
@@ -113,7 +113,7 @@ export default ({ token }) => {
         const token = role + "-token";
 
         commit("SET_TOKEN", token);
-        setToken(token);
+        token.set(token);
 
         const { roles } = await dispatch("getInfo");
 

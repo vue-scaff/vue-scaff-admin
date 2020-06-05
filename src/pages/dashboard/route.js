@@ -3,6 +3,7 @@ import Layout from "@/layout";
 
 // Export
 export default {
+  name: "dashboard",
   path: "/",
   component: Layout,
   redirect: "/dashboard",

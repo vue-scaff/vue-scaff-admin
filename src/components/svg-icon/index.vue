@@ -1,3 +1,54 @@
+<template>
+  <div
+    v-if="isExternal"
+    :style="styleExternalIcon"
+    class="svg-external-icon svg-icon"
+    v-on="$listeners"
+  />
+  <svg v-else :class="svgClass" aria-hidden="true" v-on="$listeners">
+    <use :xlink:href="iconName" />
+  </svg>
+</template>
+
+<script>
+// doc: https://panjiachen.github.io/vue-element-admin-site/feature/component/svg-icon.html#usage
+
+export default {
+  name: "svg-icon",
+  props: {
+    iconClass: {
+      type: String,
+      required: true
+    },
+    className: {
+      type: String,
+      default: ""
+    }
+  },
+  computed: {
+    isExternal() {
+      return this.$util.validate.isExternal(this.iconClass);
+    },
+    iconName() {
+      return `#icon-${this.iconClass}`;
+    },
+    svgClass() {
+      if (this.className) {
+        return "svg-icon " + this.className;
+      } else {
+        return "svg-icon";
+      }
+    },
+    styleExternalIcon() {
+      return {
+        mask: `url(${this.iconClass}) no-repeat 50% 50%`,
+        "-webkit-mask": `url(${this.iconClass}) no-repeat 50% 50%`
+      };
+    }
+  }
+};
+</script>
+
 <style scoped>
 .svg-icon {
   width: 1em;
@@ -13,23 +64,3 @@
   display: inline-block;
 }
 </style>
-
-<template>
-  <i :class="{ [`el-icon-${iconClass}`]: true, [className]: true }"></i>
-</template>
-
-<script>
-export default {
-  name: "svg-icon",
-  props: {
-    iconClass: {
-      type: String,
-      required: true
-    },
-    className: {
-      type: String,
-      default: ""
-    }
-  }
-};
-</script>

@@ -49,8 +49,8 @@ export default {
       return !this.sidebar.opened;
     }
   },
-	mounted () {
-		console.log(1111, this.$route);
-	}
+  mounted() {
+    console.log(1111, this.$route);
+  }
 };
 </script>

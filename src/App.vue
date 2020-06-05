@@ -6,6 +6,9 @@
 
 <script>
 export default {
-  name: "App"
+  name: "App",
+  mounted() {
+    console.log("ALL ROUTES : ", this.$router.options.routes);
+  }
 };
 </script>
