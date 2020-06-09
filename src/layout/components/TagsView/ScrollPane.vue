@@ -98,7 +98,9 @@ export default {
       bottom: 0px;
     }
     .el-scrollbar__wrap {
-      height: 49px;
+      height: 34px;
+      display: flex;
+      align-items: flex-end;
     }
   }
 }
