@@ -1,6 +1,6 @@
 <template>
   <div :class="{ show: show }" class="header-search">
-    <x-svg-icon
+    <svg-icon
       class-name="search-icon"
       icon-class="search"
       @click.stop="click"

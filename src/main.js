@@ -6,6 +6,9 @@ import Element from "element-ui";
 import "@/sheet/element-theme.scss";
 import en from "element-ui/lib/locale/lang/en";
 
+// Use Svg Icon
+import "./icons";
+
 // Export Useage
 export default (
   // App

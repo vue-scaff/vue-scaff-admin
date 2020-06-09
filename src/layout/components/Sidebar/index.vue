@@ -13,7 +13,7 @@
         mode="vertical"
       >
         <sidebar-item
-          v-for="route in permission_routes"
+          v-for="route in sider_routes"
           :key="route.path"
           :item="route"
           :base-path="route.path"
@@ -33,6 +33,12 @@ export default {
   components: { SidebarItem, Logo },
   computed: {
     ...mapGetters(["permission_routes", "sidebar"]),
+
+    // Code By Joenix
+    sider_routes() {
+      return this.$router.options.routes.filter(route => route.hidden !== true);
+    },
+
     activeMenu() {
       const route = this.$route;
       const { meta, path } = route;
@@ -49,8 +55,6 @@ export default {
       return !this.sidebar.opened;
     }
   },
-  mounted() {
-    console.log(1111, this.$route);
-  }
+  mounted() {}
 };
 </script>

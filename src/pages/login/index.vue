@@ -14,7 +14,7 @@
 
       <el-form-item prop="username">
         <span class="svg-container">
-          <x-svg-icon icon-class="user" />
+          <svg-icon icon-class="user" />
         </span>
         <el-input
           ref="username"
@@ -35,7 +35,7 @@
       >
         <el-form-item prop="password">
           <span class="svg-container">
-            <x-svg-icon icon-class="password" />
+            <svg-icon icon-class="password" />
           </span>
           <el-input
             :key="passwordType"
@@ -51,7 +51,7 @@
             @keyup.enter.native="handleLogin"
           />
           <span class="show-pwd" @click="showPwd">
-            <x-svg-icon
+            <svg-icon
               :icon-class="passwordType === 'password' ? 'eye' : 'eye-open'"
             />
           </span>
