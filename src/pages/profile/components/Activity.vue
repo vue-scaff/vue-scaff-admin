@@ -27,7 +27,7 @@
         </li>
         <li>
           <span class="link-black text-sm">
-            <svg-icon icon-class="like" />
+            <x-svg-icon icon-class="like" />
             Like
           </span>
         </li>
@@ -60,7 +60,7 @@
         </li>
         <li>
           <span class="link-black text-sm">
-            <svg-icon icon-class="like" />
+            <x-svg-icon icon-class="like" />
             Like
           </span>
         </li>
@@ -93,7 +93,7 @@
         </li>
         <li>
           <span class="link-black text-sm">
-            <svg-icon icon-class="like" /> Like</span
+            <x-svg-icon icon-class="like" /> Like</span
           >
         </li>
       </ul>

@@ -20,7 +20,7 @@
                 {{ generateIconCode(item) }}
               </div>
               <div class="icon-item">
-                <svg-icon :icon-class="item" class-name="disabled" />
+                <x-svg-icon :icon-class="item" class-name="disabled" />
                 <span>{{ item }}</span>
               </div>
             </el-tooltip>
@@ -62,7 +62,7 @@ export default {
   },
   methods: {
     generateIconCode(symbol) {
-      return `<svg-icon icon-class="${symbol}" />`;
+      return `<x-svg-icon icon-class="${symbol}" />`;
     },
     generateElementIconCode(symbol) {
       return `<i class="el-icon-${symbol}" />`;

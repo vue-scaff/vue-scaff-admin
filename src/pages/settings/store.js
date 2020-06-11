@@ -3,10 +3,10 @@ export default ({ $http, $style }) => {
 
   const state = {
     theme: $style.theme,
-    showSettings: process.env.showSettings,
-    tagsView: process.env.tagsView,
-    fixedHeader: process.env.fixedHeader,
-    sidebarLogo: process.env.sidebarLogo
+    showSettings: true, // process.env.showSettings,
+    tagsView: true, // process.env.tagsView,
+    fixedHeader: false, // process.env.fixedHeader,
+    sidebarLogo: true // process.env.sidebarLogo
   };
 
   const mutations = {

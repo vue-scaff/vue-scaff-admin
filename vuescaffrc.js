@@ -22,6 +22,11 @@ module.exports = {
       suffix: /.js$/
     },
 
+    filter: {
+      context: `@/filters`,
+      suffix: /.js$/
+    },
+
     route: {
       context: `@/pages`,
       suffix: /\S+\/route.js$/
@@ -35,11 +40,6 @@ module.exports = {
     component: {
       context: `@/components`,
       suffix: /.vue$/
-    },
-
-    filter: {
-      context: `@/filters`,
-      suffix: /.js$/
     },
 
     style: {

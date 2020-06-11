@@ -2,6 +2,7 @@
   <div class="dashboard-container">
     <!-- <component :is="currentRole" /> -->
     1111
+    <plus-ab :a="1" :b="2" />
   </div>
 </template>
 

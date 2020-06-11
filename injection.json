@@ -1,15 +1,7 @@
 {
-  "publicPath": "{{ NODE_ENV }} === 'development' ? '/' : '/vue-scaff-dashboard'",
+  "publicPath": "{{ NODE_ENV }} === 'development' ? '/' : '/vue-scaff'",
 
   "version": "1.2.3.4",
 
-  "title": "Vue Scaff Admin",
-
-  "showSettings": true,
-
-  "tagsView": true,
-
-  "fixedHeader": false,
-
-  "sidebarLogo": true
+  "title": "Vue Scaff Admin"
 }

@@ -2,13 +2,13 @@
   <div class="social-signup-container">
     <div class="sign-btn" @click="wechatHandleClick('wechat')">
       <span class="wx-svg-container">
-        <svg-icon icon-class="wechat" class="icon" />
+        <x-svg-icon icon-class="wechat" class="icon" />
       </span>
       WeChat
     </div>
     <div class="sign-btn" @click="tencentHandleClick('tencent')">
       <span class="qq-svg-container">
-        <svg-icon icon-class="qq" class="icon" />
+        <x-svg-icon icon-class="qq" class="icon" />
       </span>
       QQ
     </div>

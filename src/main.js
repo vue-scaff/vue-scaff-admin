@@ -6,8 +6,8 @@ import Element from "element-ui";
 import "@/sheet/element-theme.scss";
 import en from "element-ui/lib/locale/lang/en";
 
-// Use Svg Icon
-import "./icons";
+// Use Joos
+import joosComponent from "@joos/component-vue";
 
 // Export Useage
 export default (
@@ -73,6 +73,8 @@ export default (
     size: `medium`,
     locale: en
   });
+
+  Vue.use(joosComponent);
 
   // Runner
   return next(App);
