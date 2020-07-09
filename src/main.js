@@ -26,7 +26,7 @@ export default (
     config.mode = "history";
 
     // Set Base Route
-    config.baseRoute = process.env.publicPath;
+    config.base = process.env.publicPath;
 
     // Guard
     config.beforeEach = (to, from, next) => {
