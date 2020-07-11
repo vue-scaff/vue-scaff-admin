@@ -5,7 +5,7 @@
     class="svg-external-icon svg-icon"
     v-on="$listeners"
   />
-  <i v-else :class="`vsa ${iconName} ${svgClass}`" />
+  <i v-else :class="`vsa ${iconName} ${svgClass}`" v-on="$listeners" />
   <!--
 	<svg v-else :class="svgClass" aria-hidden="true" v-on="$listeners">
     <use :xlink:href="iconName" />
