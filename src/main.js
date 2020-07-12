@@ -64,7 +64,7 @@ export default (
   });
 
   subscribe("request", ({ data, headers }) => {
-    data.token = "wechat: kazami500";
+    data.token = "wechat: ejoenix";
   });
 
   subscribe("response", config => {
